@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=$HOME/.local/bin/qrcodescanning
+Icon=qrcodescanning
+MimeType=image/png;
+Name=QR Code scanning
+NoDisplay=true
+Type=Application

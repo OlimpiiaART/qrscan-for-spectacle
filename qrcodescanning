@@ -1,0 +1,18 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+    zenity --error --text="Файл не указан!"
+    exit 1
+fi
+
+result=$(zbarimg "$1" 2>/dev/null | sed 's/QR-Code://')
+if [ -z "$result" ]; then
+    zenity --info --text="QR не найден"
+else
+    if [ "$WAYLAND_DISPLAY" ]; then
+        echo -n "$result" | wl-copy
+    else
+        echo -n "$result" | xclip -selection clipboard
+    fi
+
+    zenity --info --text="QR: $result\n\nТекст скопирован в буфер обмена"
+fi
