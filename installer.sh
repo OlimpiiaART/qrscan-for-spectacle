@@ -3,7 +3,7 @@
 GIT="https://raw.githubusercontent.com/OlimpiiaART/qrscan-for-spectacle/main"
 INSTALL_PATH="$HOME/.local/bin/qrcodescanning"
 DESKTOP_PATH="$HOME/.local/share/applications/qrcodescanning.desktop"
-ICON_PATH="/usr/share/icons/hicolor/72x72/apps/qrcodescanning.png"
+ICON_PATH="/usr/share/pixmaps/qrcodescanning.png"
 
 mkdir -p "$(dirname "$INSTALL_PATH")"
 rm -f -- "$INSTALL_PATH"
