@@ -14,5 +14,5 @@ else
         echo -n "$result" | xclip -selection clipboard
     fi
 
-    zenity --no-markup --info --text="$result"
+    zenity --info --no-markup --text="$result"
 fi
