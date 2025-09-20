@@ -14,5 +14,5 @@ else
         echo -n "$result" | xclip -selection clipboard
     fi
 
-    zenity --info --text="QR: $result\n\nТекст скопирован в буфер обмена"
+    zenity --info --text="$(printf 'QR: %s\n\nТекст скопирован в буфер обмена' "$result")"
 fi
