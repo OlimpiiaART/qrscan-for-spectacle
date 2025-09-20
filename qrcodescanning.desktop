@@ -3,5 +3,5 @@ Exec=$HOME/.local/bin/qrcodescanning
 Icon=qrcodescanning
 MimeType=image/png;
 Name=QR Code scanning
-NoDisplay=true
+NoDisplay=false
 Type=Application
